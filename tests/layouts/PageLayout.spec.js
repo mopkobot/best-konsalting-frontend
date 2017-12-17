@@ -7,8 +7,13 @@ describe('(Layout) PageLayout', () => {
     shallow(<PageLayout />).should.have.tagName('div')
   })
 
+  it('Renders an lady justice image', () => {
+    const ladyJustice = shallow(<PageLayout />).find('img')
+    expect(ladyJustice).to.exist()
+  })
+
   it('renders a project title', () => {
-    shallow(<PageLayout />).find('h1').should.have.text('Бест Консалтинг')
+    shallow(<PageLayout />).find('h4').should.have.text('Бест Консалтинг')
   })
 
   it('renders its children inside of the viewport', () => {

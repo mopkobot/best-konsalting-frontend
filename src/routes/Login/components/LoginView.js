@@ -1,10 +1,13 @@
 import React from 'react'
-import LadyJustice from '../assets/Lady-Justice.png'
 import './LoginView.scss'
 
 export const LoginView = () => (
   <div>
-    <img className='lady-justice' src={LadyJustice}/>
+    <div data-qa='login-form'>
+      <div data-qa='username'><label>Корисничко име:</label></div>
+      <div data-qa='password'><label>Лозинка:</label></div>
+      <button>Логирај се</button>
+    </div>
   </div>
 )
 
