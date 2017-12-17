@@ -1,14 +1,14 @@
-import HomeRoute from 'routes/Home'
+import LoginRoute from 'routes/Login'
 
 describe('(Route) Home', () => {
   let _component
 
   beforeEach(() => {
-    _component = HomeRoute.component()
+    _component = LoginRoute.component()
   })
 
   it('Should return a route configuration object', () => {
-    expect(typeof HomeRoute).to.equal('object')
+    expect(typeof LoginRoute).to.equal('object')
   })
 
   it('Should define a route component', () => {
